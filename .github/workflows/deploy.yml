@@ -1,6 +1,6 @@
 name: Deploy Fake
 on:
-    workflow_dispatch: 
+    workflow_call: 
       inputs:
         ambiente:
           type: string
