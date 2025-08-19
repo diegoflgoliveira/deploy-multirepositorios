@@ -10,6 +10,4 @@ jobs:
 
             - name: Curl Deploy no ambiente
               run: |
-                "curl -X POST https://webhook.site/4a711859-44a5-432e-97cf-f91ff0a7d579 \
-                -H "Content-Type: application/json" \
-                -d '{ ambiente ${{ secrets.AMBIENTE_ENTREGA }}}'"
+                "curl -X POST https://webhook.site/4a711859-44a5-432e-97cf-f91ff0a7d579 -d '{ ambiente ${{ secrets.AMBIENTE_ENTREGA }}}'"
